@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CryptoSwift (1.8.3)
+  - DTTJailbreakDetection (0.4.0)
+  - Flutter (1.0.0)
+  - http_certificate_pinning (1.0.3):
+    - Alamofire (~> 4.9.1)
+    - CryptoSwift
+    - Flutter
+  - root_checker_plus (0.0.1):
+    - DTTJailbreakDetection
+    - Flutter
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - video_player_avfoundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - http_certificate_pinning (from `.symlinks/plugins/http_certificate_pinning/ios`)
+  - root_checker_plus (from `.symlinks/plugins/root_checker_plus/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/darwin`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CryptoSwift
+    - DTTJailbreakDetection
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  http_certificate_pinning:
+    :path: ".symlinks/plugins/http_certificate_pinning/ios"
+  root_checker_plus:
+    :path: ".symlinks/plugins/root_checker_plus/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  video_player_avfoundation:
+    :path: ".symlinks/plugins/video_player_avfoundation/darwin"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CryptoSwift: 967f37cea5a3294d9cce358f78861652155be483
+  DTTJailbreakDetection: 5e356c5badc17995f65a83ed9483f787a0057b71
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  http_certificate_pinning: 2a9097b304c7ea3b51804af46d381aba8108fa29
+  root_checker_plus: 939d3fae096f130175a22c9e94fe254260e94701
+  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
+  video_player_avfoundation: 7c6c11d8470e1675df7397027218274b6d2360b3
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.12.1
