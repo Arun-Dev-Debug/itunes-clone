@@ -159,12 +159,20 @@ class MyHomePage extends ConsumerWidget {
                   if (kDebugMode) {
                     print(searchText.text);
                   }
-                   Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => MediaPage(searchTerm: searchText.text,),
-                    ),
-                  );
+                   if(searchText.text.isNotEmpty){
+                     Navigator.push(
+                       context,
+                       MaterialPageRoute(
+                         builder: (context) => MediaPage(searchTerm: searchText.text,),
+                       ),
+                     );
+                   }else{
+                     ScaffoldMessenger.of(context).showSnackBar(
+                         const SnackBar(
+                           content: Text('Text cannot be empty..'),
+                         )
+                     );
+                   }
                 },
                 child: const Text(
                   'Submit',

@@ -58,7 +58,15 @@ class _ItunesListGridViewState extends State<ItunesListGridView> {
                       isList = false;
                     });
                   },
-                  style: ElevatedButton.styleFrom(
+                  style: (isGrid) ?ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey,
+                    elevation: 0,
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(5),
+                          bottomLeft: Radius.circular(5)),
+                    ),
+                  ) : ElevatedButton.styleFrom(
                     backgroundColor: Colors.grey.shade800,
                     elevation: 0, // removes elevation
                     shape: const RoundedRectangleBorder(
@@ -86,7 +94,7 @@ class _ItunesListGridViewState extends State<ItunesListGridView> {
                       isList = true;
                     });
                   },
-                  style: ElevatedButton.styleFrom(
+                  style: (isList) ? ElevatedButton.styleFrom(
                     backgroundColor: Colors.grey,
                     elevation: 0,
                     shape: const RoundedRectangleBorder(
@@ -94,7 +102,15 @@ class _ItunesListGridViewState extends State<ItunesListGridView> {
                           topRight: Radius.circular(5),
                           bottomRight: Radius.circular(5)),
                     ),
-                  ),
+                  ) : ElevatedButton.styleFrom(
+                    backgroundColor: Colors.grey.shade800,
+                    elevation: 0, // removes elevation
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(5),
+                          bottomRight: Radius.circular(5)),
+                    ),
+                  ) ,
                   child: const Text(
                     'List Layout',
                     style: TextStyle(color: Colors.white, fontSize: 16),
@@ -175,29 +191,39 @@ class _ItunesListGridViewState extends State<ItunesListGridView> {
                       physics: const NeverScrollableScrollPhysics(),
                       itemCount: widget.mediaMap.values.elementAt(i).length,
                       itemBuilder: (context, index) {
-                        return Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(left: 20,top: 20,bottom: 20),
-                              child: Image.network(
-                                scale: .6,
-                                  widget.mediaMap.values.elementAt(i)[index].artworkUrl100.toString()
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailsPage(mediaResult: widget.mediaMap.values.elementAt(i)[index]),
                               ),
-                            ),
-                            Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.all(20),
-                                child: Text(
-                                  widget.mediaMap.values.elementAt(i)[index].trackName.toString(),
-                                  style: const TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.white,
+                            );
+                          },
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20,top: 20,bottom: 20),
+                                child: Image.network(
+                                  scale: .6,
+                                    widget.mediaMap.values.elementAt(i)[index].artworkUrl100.toString()
+                                ),
+                              ),
+                              Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child: Text(
+                                    widget.mediaMap.values.elementAt(i)[index].trackName.toString(),
+                                    style: const TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         );
                       },
                     ),
