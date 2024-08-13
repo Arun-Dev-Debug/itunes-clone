@@ -15,7 +15,7 @@ This project is a starting point for a Flutter application.
 
 ## Screen Shots
 
-![Screenshot](./assets/screenshots/android/Screenshot_1723446252.png)
+![Screenshot](./screenshots/android/Screenshot_1723446252.png)
 
 A few resources to get you started if this is your first Flutter project:
 
