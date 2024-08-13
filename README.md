@@ -15,11 +15,15 @@ This project is a starting point for a Flutter application.
 
 ## Image Screenshots
 
-<img src="./screenshots/android/Screenshot_1723446252.png" alt="Screenshot" width="300"/>
-<img src="./screenshots/android/Screenshot_1723446274.png" alt="Screenshot" width="300"/>
-<img src="./screenshots/android/Screenshot_1723446280.png" alt="Screenshot" width="300"/>
-<img src="./screenshots/android/Screenshot_1723446285.png" alt="Screenshot" width="300"/>
-<img src="./screenshots/android/Screenshot_1723446303.png" alt="Screenshot" width="300"/>
+<p float="left">
+  <img src="./screenshots/android/Screenshot_1723446252.png" alt="Screenshot" width="300"/>
+  <img src="./screenshots/android/Screenshot_1723446274.png" alt="Screenshot" width="300"/>
+</p>
+
+<p float="left">
+  <img src="./screenshots/android/Screenshot_1723446280.png" alt="Screenshot" width="300"/>
+  <img src="./screenshots/android/Screenshot_1723446285.png" alt="Screenshot" width="300"/>
+</p>
 
 
 A few resources to get you started if this is your first Flutter project:
