@@ -1,6 +1,6 @@
 # itunes
 
-A new Flutter project.
+Itues Clone Flutter project.
 
 ## Getting Started
 
@@ -10,8 +10,13 @@ A new Flutter project.
 2. **Install Dependencies**: Run `flutter pub get` to install the required dependencies.
 3. **Run the App**: Execute `flutter run` to start the application.
 
-
-This project is a starting point for a Flutter application.
+## Technology Stack:
+1. **Architecture MVVM
+2. **State management Riverpod.
+3. **Use both Grid and List View and it would be better if you can play the view (You can redesign the UI based on your creativity).
+4. **SSL Public Key Pinning
+5. **Root Detection check
+6. **API Test Case using mocktail
 
 ## Image Screenshots
 
@@ -24,8 +29,6 @@ This project is a starting point for a Flutter application.
   <img src="./screenshots/android/Screenshot_1723446285.png" alt="Screenshot" width="300"/>
 </p>
 
-
-A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
