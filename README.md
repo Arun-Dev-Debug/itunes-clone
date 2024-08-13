@@ -13,9 +13,9 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-## Screen Shots
+## Image Screenshots Android
 
-![Screenshot](./screenshots/android/Screenshot_1723446252.png)
+<img src="./screenshots/android/Screenshot_1723446252.png" alt="Screenshot" width="300"/>
 
 A few resources to get you started if this is your first Flutter project:
 
