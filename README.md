@@ -11,12 +11,12 @@ Itues Clone Flutter project.
 3. **Run the App**: Execute `flutter run` to start the application.
 
 ## Technology Stack:
-1. **Architecture MVVM
+1. **Architecture MVVM.
 2. **State management Riverpod.
-3. **Use both Grid and List View and it would be better if you can play the view (You can redesign the UI based on your creativity).
-4. **SSL Public Key Pinning
-5. **Root Detection check
-6. **API Test Case using mocktail
+3. **Use both Grid and List View.
+4. **SSL Public Key Pinning.
+5. **Root Detection check.
+6. **API Test Case using mocktail.
 
 ## Image Screenshots
 
